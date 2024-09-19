@@ -1,0 +1,17 @@
+<jxb:bindings xmlns:jxb="http://java.sun.com/xml/ns/jaxb"
+              xmlns:xs="http://www.w3.org/2001/XMLSchema"
+              jxb:version="2.1">
+
+    <jxb:bindings schemaLocation="http://pokemon.com/app"
+                  node="/xs:schema">
+        
+        <jxb:bindings node="//xs:element[@name='GetPokemonsRequest']">
+            <jxb:class ref="com.pokemon.app.soap.GetPokemonsRequest"/>
+        </jxb:bindings>
+        
+        <jxb:bindings node="//xs:element[@name='GetPokemonsResponse']">
+            <jxb:class ref="com.pokemon.app.soap.GetPokemonsResponse"/>
+        </jxb:bindings>
+
+    </jxb:bindings>
+</jxb:bindings>
